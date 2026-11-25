@@ -7,6 +7,7 @@ use App\Http\Controllers\Api\GetCategoryBySlugController;
 use App\Http\Controllers\Api\GetBrandsController;
 use App\Http\Controllers\Api\GetBrandByIdController;
 use App\Http\Controllers\Api\GetBrandBySlugController;
+use App\Http\Controllers\Api\GetProductsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,5 @@ Route::get('/categories/{id}', GetCategoryByIdController::class);
 Route::get('/brands', GetBrandsController::class);
 Route::get('/brands/slug/{slug}', GetBrandBySlugController::class);
 Route::get('/brands/{id}', GetBrandByIdController::class);
+
+Route::get('/products', GetProductsController::class);
